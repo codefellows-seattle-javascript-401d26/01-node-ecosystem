@@ -1,3 +1,13 @@
+### Documentation
+# arithmetic.js 
+Arithmetic.js is composed of two functions: add and sub, which both take in two number arguments.
+## add(augend, addend)
+This function has an arity of 2. The limitation on each argument is that they have to be of type `number`. If they aren't, the function will output `null`. If both arguments are numbers, the function returns the sum of those two numbers.
+## sub(minuend, subtrahend)
+This function has an arity of 2. The limitation on each argument is that they have to be of type `number`. If they aren't, the function will output `null`. If both arguments are numbers, the function returns the differnence between those two numbers.
+
+
+
 ![CF](http://i.imgur.com/7v5ASc8.png) 01: Node Ecosystem
 ===
 
@@ -41,3 +51,5 @@ Create a NodeJS module in the `lib` directory named `arithmetic.js`. This module
 
 ### Documentation
 In your README.md file, describe the exported values of each module defined in your `lib` directory. Every function description should include it's airty (expected number of parameters), the expected data for each parameter (data-type and limitations), and the expected output behavior (for both valid and invalid use). Feel free to include any additional information that you would like.
+
+
