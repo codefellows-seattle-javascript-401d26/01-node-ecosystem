@@ -1,23 +1,30 @@
+'use strict';
+
 // Define arithmetic
-var arithmetic = {};
+const arithmetic = {};
 
-arithmetic.add = function(variableA, variableB) {
-  if(isNaN(variableA) || isNaN(variableB)) {
+arithmetic.add = function (variableA, variableB) {
+  if (Number.isNaN(variableA) || typeof (variableA) === 'string') {
     return null;
-  } else {
-    return variableA + variableB;
   }
+  if (Number.isNaN(variableB) || typeof (variableA) === 'string') {
+    return null;
+  }
+
+  return variableA + variableB;
 };
 
-arithmetic.sub = function(variableA, variableB) {
-  if( isNaN(variableA) || isNaN(variableB) ) {
+arithmetic.sub = function (variableA, variableB) {
+  if (Number.isNaN(variableA) || typeof (variableA) === 'string') {
     return null;
-  } else {
-    return variableA - variableB;
   }
+  if (Number.isNaN(variableB) || typeof (variableA) === 'string') {
+    return null;
+  }
+  return variableA - variableB;
 };
 
-console.log(arithmetic.sub(2, 3));
-console.log(arithmetic.add(5, 6));
+// console.log(arithmetic.sub(2, 3));
+// console.log(arithmetic.add('a', 6));
 
 module.exports = arithmetic;
