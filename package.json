@@ -1,0 +1,30 @@
+{
+  "name": "01-node-ecosystem",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/lib/arithmetic.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^21.22.0",
+    "jest": "^23.6.0"
+  },
+  "scripts": {
+    "test": "eslint . && jest --coverage",
+    "justJust": "jest",
+    "lintMe": "eslint ./src/lib/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bgwest/01-node-ecosystem.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bgwest/01-node-ecosystem/issues"
+  },
+  "homepage": "https://github.com/bgwest/01-node-ecosystem#readme"
+}
